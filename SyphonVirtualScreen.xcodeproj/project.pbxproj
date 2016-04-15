@@ -29,7 +29,7 @@
 		CD7C8CA4151B8EE600A85955 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7C8C91151B86F500A85955 /* OpenGL.framework */; };
 		CD7C8CA6151B8EE600A85955 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7F7871151B223000EEE064 /* CoreVideo.framework */; };
 		CD7C8CD0151BD26500A85955 /* appname.png in Resources */ = {isa = PBXBuildFile; fileRef = CD7C8CCE151BD26400A85955 /* appname.png */; };
-		CD7CCE46151DBB240061198E /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD7CCE42151DBB030061198E /* Syphon.framework */; };
+		CD7CCE46151DBB240061198E /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD7CCE42151DBB030061198E /* Syphon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CDAF1A39151CE89B0074458A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAF1A38151CE89B0074458A /* Cocoa.framework */; };
 		CDAF1A3B151CE8B60074458A /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAF1A3A151CE8B60074458A /* IOKit.framework */; };
 		CDAF1A3D151CEAA90074458A /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDAF1A3C151CEAA90074458A /* LaunchAtLoginController.m */; };
@@ -45,7 +45,7 @@
 		CDD1E8B5189705F000794651 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDD1E8B4189705F000794651 /* Images.xcassets */; };
 		CDD1E8B81897099100794651 /* logo_panel.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD1E8B61897099100794651 /* logo_panel.png */; };
 		CDD1E8B91897099100794651 /* logo_panel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD1E8B71897099100794651 /* logo_panel@2x.png */; };
-		CDFB76AC15B83C05009844B9 /* EWProxyFrameBufferConnection.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDFB76A715B83BE9009844B9 /* EWProxyFrameBufferConnection.framework */; };
+		CDFB76AC15B83C05009844B9 /* EWProxyFrameBufferConnection.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDFB76A715B83BE9009844B9 /* EWProxyFrameBufferConnection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CDFB76AE15B83C57009844B9 /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFB769B15B83BDC009844B9 /* Syphon.framework */; };
 /* End PBXBuildFile section */
 
@@ -367,10 +367,10 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0720;
 				TargetAttributes = {
 					CD7C8C97151B8EE600A85955 = {
-						DevelopmentTeam = 73UG6K3F4P;
+						DevelopmentTeam = 82DMWH454F;
 					};
 				};
 			};
@@ -533,6 +533,7 @@
 		1DEB91DE08733DB10010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -559,6 +560,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -587,9 +589,10 @@
 				INFOPLIST_FILE = "SyphonVirtualScreen-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreacremaschi.syphonvirtualscreen;
 				PRODUCT_NAME = "Syphon Virtual Screen";
-				PROVISIONING_PROFILE = "2CD044C6-D3CD-45DC-8DD2-1D8DA31BA19C";
-				SDKROOT = macosx10.8;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -601,6 +604,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -624,9 +628,10 @@
 				INFOPLIST_FILE = "SyphonVirtualScreen-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreacremaschi.syphonvirtualscreen;
 				PRODUCT_NAME = "Syphon Virtual Screen";
-				PROVISIONING_PROFILE = "2CD044C6-D3CD-45DC-8DD2-1D8DA31BA19C";
-				SDKROOT = macosx10.8;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

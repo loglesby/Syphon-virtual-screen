@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "090E66779425077EEDA370ED3BF6346B83FA326A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "090E66779425077EEDA370ED3BF6346B83FA326A" : 0,
+    "443CB8329EE9682B9E773354985E4381607C0879" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C75ACE94-4A71-42DC-9A2B-D198D3961664",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "090E66779425077EEDA370ED3BF6346B83FA326A" : "Syphon-virtual-screen\/",
+    "443CB8329EE9682B9E773354985E4381607C0879" : "Syphon-virtual-screen\/EWProxyFramebuffer\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SyphonVirtualScreen",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SyphonVirtualScreen.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/andreacremaschi\/Syphon-virtual-screen.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "090E66779425077EEDA370ED3BF6346B83FA326A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/andreacremaschi\/EWProxyFramebuffer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "443CB8329EE9682B9E773354985E4381607C0879"
+    }
+  ]
+}
